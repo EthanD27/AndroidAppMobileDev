@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+
+    >
+
+    <!-- Logo Image -->
+    <!-- Replace with your logo drawable -->
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp" />
+
+    <!-- Introduction Text -->
+
+    <!-- Register Button -->
+
+    <!-- Sign In Button -->
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="282dp"
+        android:layout_height="243dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/your_logo"
+        app:layout_constraintBottom_toTopOf="@+id/introTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/introTextView"
+        android:layout_width="318dp"
+        android:layout_height="330dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="29dp"
+        android:text="🌱 Recycle App – Your Sustainable Living Guide! \n  \n 🚀 Dive into a greener lifestyle with tips, recycling know-how, and local eco-friendly options.  \n \n 🌍 Connect with like-minded individuals and explore sustainable products. \n  \n 📚 Learn how small changes make a big impact on the environment. \n  \n 💬 Join a community making positive choices for a brighter, cleaner future. \n  \n 🛍️ Discover curated eco-friendly alternatives available in your community. \n  \n 🎮 Transform eco-conscious actions into a fun and rewarding experience. \n \n  📲 Download Recycle app and be part of the sustainability revolution! 🌿"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/registerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="3dp"
+        android:text="Register"
+        app:layout_constraintBottom_toTopOf="@+id/signInButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introTextView" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:text="Sign In"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/registerButton"
+        app:layout_constraintStart_toStartOf="@+id/registerButton"
+        app:layout_constraintTop_toBottomOf="@+id/registerButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecyclingActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/your_logo" />
+
+    <TextView
+        android:id="@+id/paragraphTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="2dp"
+        android:padding="16dp"
+        android:text="
+Recycling is a vital solution to global environmental challenges like climate change, pollution, and resource depletion. By reusing materials, it reduces the extraction of finite resources, combats pollution by minimizing landfill waste, and lowers greenhouse gas emissions. Recycling also addresses the responsible disposal of electronic waste, preventing the release of hazardous materials. Embracing recycling globally conserves resources, fosters a sustainable economy, and provides a tangible way to address interconnected planetary challenges" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paragraphTextView"
+        android:layout_marginTop="0dp" />
+
+</RelativeLayout>
